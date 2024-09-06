@@ -1,0 +1,9 @@
+<section class="users">
+<h4 class="usersTitle">Список пользователей в хранилище</h4>
+
+<ul class="usersContainer">
+    {% for user in users %}
+        <li>{{ user.getUserName() }}. День рождения: {{ user.getUserBirthday() }}</li>
+    {% endfor %}
+</ul>
+</section>
